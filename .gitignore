@@ -1,0 +1,28 @@
+node_modules
+config/*
+.env
+/*.DS_STORE
+# Logs and lock files
+yarn.lock
+yarn-error.log
+npm-debug.log
+
+# Log files
+*.log
+logs
+
+# Build files
+dist
+
+# Image and PDF files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.pdf
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot

@@ -1,0 +1,6 @@
+build
+dist
+.next
+node_modules/
+*.log
+api-v2/model

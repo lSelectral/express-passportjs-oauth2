@@ -1,0 +1,40 @@
+{
+    "js/ts.implicitProjectConfig.checkJs": true,
+    // Extension: Prettier
+    "prettier.requireConfig": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    // Extension: ESLint
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": false
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    // JS
+    //   "javascript.updateImportsOnFileMove.enabled": "always",
+    // JSON
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "material-icon-theme.files.associations": {
+        "rules.ts": "Ejs",
+        "*.repository.ts": "Database",
+        "*.service.ts": "Haskell",
+        "*.router.ts": "Sentry",
+        "*.controller.ts": "Edge",
+        "*.spec.tsx": "Test-tsx",
+        "*.spec.ts": "Test-ts",
+        "*.test.tsx": "Test-tsx",
+        "*.test.ts": "Test-ts",
+        "zodios/index.ts": "Zig"
+    },
+    "material-icon-theme.folders.associations": {
+        "dtos": "class",
+    },
+}

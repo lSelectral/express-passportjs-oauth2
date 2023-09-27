@@ -1,0 +1,73 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    // "plugin:security/recommended",
+    "prettier",
+    "plugin:sonarjs/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "rules": {
+    "no-console": "off",
+    "import/no-anonymous-default-export": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    // "@typescript-eslint/no-explicit-any": "error",
+    // add new line above comment
+    // "lines-around-comment": [
+    //   "error",
+    //   {
+    //     // "beforeLineComment": true,
+    //     "beforeBlockComment": true,
+    //     "allowBlockStart": true,
+    //     "allowClassStart": true,
+    //     "allowObjectStart": true,
+    //     "allowArrayStart": true
+    //   }
+    // ],
+    // add new line above return
+    // "newline-before-return": "error",
+    // add new line below import
+    "import/newline-after-import": [
+      "error",
+      {
+        "count": 1
+      }
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ]
+  },
+  "plugins": [
+    "import",
+    "sonarjs"
+  ],
+  "settings": {
+    "project-structure/config-path": "projectStructure.json", // json | yaml
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "./tsconfig.json"
+        ]
+      }
+    }
+  }
+}

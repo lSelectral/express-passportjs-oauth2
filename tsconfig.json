@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "strict": false,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "src/**/*",
+        "global.d.ts"
+    ]
+}
